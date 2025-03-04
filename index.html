@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retro 2000s Website</title>
+    <style>
+        body {
+            background: url('https://www.publicdomainpictures.net/pictures/320000/velka/colorful-tiled-background.jpg');
+            font-family: Comic Sans MS, cursive;
+            text-align: center;
+            color: yellow;
+        }
+        .blink {
+            animation: blink-animation 1s steps(2, start) infinite;
+        }
+        @keyframes blink-animation {
+            50% { opacity: 0; }
+        }
+        .marquee {
+            font-size: 20px;
+            color: lime;
+            background: black;
+            padding: 10px;
+            border: 2px dashed yellow;
+        }
+        .container {
+            margin: 50px auto;
+            width: 60%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .gif {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <marquee class="marquee">Welcome to My 2000s Website! Best viewed in Internet Explorer!</marquee>
+    
+    <div class="container">
+        <h1 class="blink">WELCOME TO MY AWESOME PAGE!!!</h1>
+        <img src="https://media.giphy.com/media/l0HlNaQ6gWfllcjDO/giphy.gif" class="gif">
+        <p>Hey there! This website is totally rad. Don't forget to sign my guestbook!</p>
+        <p><strong>Visitor Counter:</strong> <span id="counter">0000001</span></p>
+    </div>
+
+    <div class="container">
+        <h2>Cool Stuff You Can Find Here:</h2>
+        <ul>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="cool_links.html">Cool Links</a></li>
+            <li><a href="contact.html">Sign My Guestbook!</a></li>
+        </ul>
+    </div>
+    
+    <img src="https://media.giphy.com/media/3o6ZsTpp6wycWogzKQ/giphy.gif" class="gif">
+    <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" class="gif">
+    <p>Under Construction!!!</p>
+</body>
+</html>
