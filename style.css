@@ -1,0 +1,57 @@
+/* Apply Windows XP-style cursor */
+body {
+    font-family: Arial, sans-serif;
+    background: url('assets/images/2000s-bg.png') repeat;
+    color: #fff;
+    text-align: center;
+    cursor: url('assets/hand.cur'), auto;
+}
+
+/* Windows XP Theme Colors */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e90ff;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+header h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px #000;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: url('assets/cursors/link.cur'), pointer;
+}
+
+/* Nostalgic Box Layout */
+.box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+

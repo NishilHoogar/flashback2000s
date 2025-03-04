@@ -1,60 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Retro 2000s Website</title>
-    <style>
-        body {
-            background: url('https://www.publicdomainpictures.net/pictures/320000/velka/colorful-tiled-background.jpg');
-            font-family: Comic Sans MS, cursive;
-            text-align: center;
-            color: yellow;
-        }
-        .blink {
-            animation: blink-animation 1s steps(2, start) infinite;
-        }
-        @keyframes blink-animation {
-            50% { opacity: 0; }
-        }
-        .marquee {
-            font-size: 20px;
-            color: lime;
-            background: black;
-            padding: 10px;
-            border: 2px dashed yellow;
-        }
-        .container {
-            margin: 50px auto;
-            width: 60%;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .gif {
-            width: 100px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2000s Nostalgia</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <marquee class="marquee">Welcome to My 2000s Website! Best viewed in Internet Explorer!</marquee>
-    
-    <div class="container">
-        <h1 class="blink">WELCOME TO MY AWESOME PAGE!!!</h1>
-        <img src="https://media.giphy.com/media/l0HlNaQ6gWfllcjDO/giphy.gif" class="gif">
-        <p>Hey there! This website is totally rad. Don't forget to sign my guestbook!</p>
-        <p><strong>Visitor Counter:</strong> <span id="counter">0000001</span></p>
-    </div>
 
     <div class="container">
-        <h2>Cool Stuff You Can Find Here:</h2>
-        <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="cool_links.html">Cool Links</a></li>
-            <li><a href="contact.html">Sign My Guestbook!</a></li>
-        </ul>
+        <header>
+            <h1>Welcome to the 2000s!</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Tech</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="box">
+                <h2>Classic Movies 🎬</h2>
+                <p>Remember Shrek, Spider-Man, and The Matrix? The 2000s were filled with legendary films!</p>
+            </section>
+
+            <section class="box">
+                <h2>Iconic Games 🎮</h2>
+                <p>Halo, GTA: Vice City, and Counter-Strike ruled the era! Gamers had the best time.</p>
+            </section>
+
+            <section class="box">
+                <h2>Internet Culture 💾</h2>
+                <p>MSN Messenger, Neopets, and MySpace... the golden age of the web!</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2000s Nostalgia | Best viewed on Internet Explorer (just kidding 😉)</p>
+        </footer>
     </div>
-    
-    <img src="https://media.giphy.com/media/3o6ZsTpp6wycWogzKQ/giphy.gif" class="gif">
-    <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" class="gif">
-    <p>Under Construction!!!</p>
+
 </body>
 </html>
