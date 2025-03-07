@@ -15,7 +15,11 @@
 
     <!-- Floating Popup -->
     <div class="floating-popup">
-        <p style="color: black;">💿 You got mail! <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"  text-decoration: underline;">Click here for a surprise!</a></p>
+        <p style="color: black;">💿 You got mail! 
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" text-decoration: underline;">
+                Click here for a surprise!
+            </a>
+        </p>
     </div>
 
     <div class="container">
@@ -23,29 +27,21 @@
             <h1>Welcome to the 2000s!</h1>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Tech</a></li>
-            </ul>
-        </nav>
-
         <main>
             <section class="box">
                 <h2>Classic Movies 🎬</h2>
                 <p>Remember Shrek, Spider-Man, and The Matrix? The 2000s were filled with legendary films!</p>
-            </section>
 
-            <section class="box">
-                <h2>Iconic Games 🎮</h2>
-                <p>Halo, GTA: Vice City, and Counter-Strike ruled the era! Gamers had the best time.</p>
-            </section>
-
-            <section class="box">
-                <h2>Internet Culture 💾</h2>
-                <p>MSN Messenger, Neopets, and MySpace... the golden age of the web!</p>
+                <!-- Image Slider -->
+                <div class="carousel-container">
+                    <button class="carousel-btn left" onclick="prevSlide()">‹</button>
+                    <div class="carousel">
+                        <img src="assets/movies/shrek.jpg" class="active" alt="Shrek">
+                        <img src="assets/movies/spiderman.jpg" alt="Spider-Man">
+                        <img src="assets/movies/matrix.jpeg" alt="The Matrix">
+                    </div>
+                    <button class="carousel-btn right" onclick="nextSlide()">›</button>
+                </div>
             </section>
         </main>
 
@@ -53,9 +49,11 @@
             <p>© 2000s Nostalgia | Best viewed on Internet Explorer!</p>
         </footer>
     </div>
-    <audio autoplay="autoplay">
+
+    <audio autoplay="autoplay" loop>
         <source src="assets/audio.mp3" type="audio/mpeg">
     </audio>
 
+    <script src="script.js"></script>
 </body>
 </html>
