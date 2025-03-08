@@ -43,10 +43,12 @@ nav ul li a {
 
 /* Nostalgic Box Layout */
 .box {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3); /* Increased opacity for better visibility */
     padding: 15px;
-    margin: 15px 0;
+    margin: 15px auto;
     border-radius: 10px;
+    border: 3px solid white; /* Added a border to enhance the box look */
+    max-width: 600px; /* Restrict box width */
 }
 
 /* Footer */
@@ -108,11 +110,10 @@ footer {
     justify-content: center;
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px; /* Reduced for a better fit */
     margin: 20px auto;
     background: #1e90ff;
-    padding: 5px;
-    border: 3px solid white;
+    padding: 8px; /* Reduced padding */
     border-radius: 10px;
     overflow: hidden;
 }
@@ -120,7 +121,7 @@ footer {
 .carousel {
     display: flex;
     width: 100%;
-    height: 250px;
+    height: 200px; /* Adjusted height */
     position: relative;
 }
 
@@ -128,9 +129,8 @@ footer {
     flex: 0 0 100%;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    border: 3px solid white;
-    border-radius: 5px;
+    object-fit: cover; /* Changed to cover for better fit */
+    border-radius: 5px; /* Removed extra border */
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -144,7 +144,7 @@ footer {
     color: black;
     font-size: 24px;
     cursor: pointer;
-    padding: 10px;
+    padding: 8px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -152,10 +152,61 @@ footer {
 }
 
 .left {
-    left: 10px;
+    left: 5px;
 }
 
 .right {
-    right: 10px;
+    right: 5px;
 }
 
+svg {
+	height: 100vh;
+	width: 100vw;
+	display: block;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+i {
+	color: $white;
+}
+i:hover {
+	color: $gray-light;
+}
+
+.notes, .sparks {
+	opacity: 0;
+}
+
+#Bass-Shadow_1_ {
+	animation: shadow 4s infinite linear;
+	transform-origin: 50% 50%;
+}
+
+#Bass_Guitar_1_ {
+	animation: hover 4s infinite linear;
+		&:hover {
+		cursor: pointer;
+	}
+}
+
+@keyframes hover {
+	from, to {
+		transition-timing-function: ease-in-out;
+		transform: translate3d(0,0,0);
+	}
+	50% {
+		transition-timing-function: ease-in-out;
+		transform: translate3d(0,1.5%,0);
+	}
+}
+
+@keyframes shadow {
+	from, to {
+		transition-timing-function: ease-in-out;
+		transform: scale(0.95,1);
+	}
+	50% {
+		transition-timing-function: ease-in-out;
+		transform: scale(1.05,1);
+	}
+}
